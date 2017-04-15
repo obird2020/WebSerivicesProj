@@ -1,0 +1,20 @@
+cd C:\Windows\Microsoft.NET\Framework\v4.0.30319
+
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\regasm.exe "D:\PROJECTS FOLDER\RMS Developments\TIGO_GHANA PROJECT\VB.NET\DOTNETDLLs\GhEpinBillDLL-v3\GhEpinDLL\bin\Debug\GhEpinDLL.dll"
+
+Create a Class (.dll) project
+Add A COM Class (Notice.vb) to the project
+Add your classinto it
+Build DLL
+Regasm it it generate .tlb
+Add it to root RMS folder
+Add reference to hook (.tlb) not .dll
+ Dim a new class of the COM Class filename(Dim cl as new Notice)
+
+Dim aba As New Notice
+aba.SendNoticesText
+
+
+
+http://www.codeproject.com/Articles/28591/Creating-a-COM-DLL-with-VS-2005-A-Walkthrough
+
